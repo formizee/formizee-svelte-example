@@ -1,38 +1,28 @@
-# sv
+# Formizee with Svelte
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This example shows how to use Formizee with [Svelte](https://svelte.dev).
 
-## Creating a project
+## Instructions
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. Update the endpoint url in `src/routes/+page.svelte` file.
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+```html
+// Update this //
+<form method="post" action="https://api.formizee.com/v1/f/enp_123456">
 ```
 
-## Developing
+2. Install dependencies:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```sh
+pnpm install
 ```
 
-## Building
+3. Run Svelte locally:
 
-To create a production version of your app:
-
-```bash
-npm run build
+```sh
+pnpm dev
 ```
 
-You can preview the production build with `npm run preview`.
+## License
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+MIT License
